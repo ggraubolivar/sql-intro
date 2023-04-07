@@ -11,8 +11,14 @@ Terminal Commands for SQL Access:
 
 SQL Syntax
 
-    SELECT [vars] 
-    FROM [table] 
+    SELECT [var], [var] 
+    FROM [table]
+    WHERE [var] >!=< [value]
+    GROUP BY [var]
+    ORDER BY [var] [DESC|ASC]
+    LIMIT [n]
 
+-- SQL delimiter is semicolon (;)
+-- SQL autocomplete is *
 
 
