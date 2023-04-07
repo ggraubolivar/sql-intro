@@ -1,0 +1,18 @@
+2023-04-07 Class #2 (SQL)
+
+Terminal Commands for SQL Access:
+
+
+    sqlite3 [filename].sqlite3      -- Access SQL Lite environment from GitPod
+    .read [filename].sqlite3        -- Running a SQL file from 
+    .exit                           -- Exit the SQL Lite environment
+    .mode columns                   -- These two allow the terminal to return more organized data
+    .heders on                      
+
+SQL Syntax
+
+    SELECT [vars] 
+    FROM [table] 
+
+
+
