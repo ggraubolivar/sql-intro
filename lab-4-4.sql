@@ -35,4 +35,16 @@
 -- | Washington Nationals          | Anthony    | Rendon      | 34                   |
 -- +-------------------------------+------------+-------------+----------------------+
 
+-- Selecting the fields we want;
+SELECT teams.name, players.first_name, players.last_name, MAX(stats.home_runs)
 
+-- Merging the tables altogether;
+FROM players INNER JOIN stats ON players.id == stats.player_id 
+             INNER JOIN teams ON stats.team_id == teams.id
+
+-- Filtering to season, sorting, and limiting to most homers;
+WHERE teams.year == 2019
+GROUP BY teams.name
+ORDER BY teams.name;
+
+-- Nice! I only had to change the groupby and order.
