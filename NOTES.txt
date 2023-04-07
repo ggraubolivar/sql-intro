@@ -21,4 +21,11 @@ SQL Syntax
 -- SQL delimiter is semicolon (;)
 -- SQL autocomplete is *
 
+MAX(), MIN(), SUM(), AVG(), MEDIAN() take on 
+
+SELECT Products.Department, Reviews.Product, Reviews.Rating, Reviews.Body
+FROM Reviews INNER JOIN Products ON Products.ID = Reviews.ProductID
+WHERE Products.Department = "Furniture";
+
+There is plenty of documentation on the ENTR-451 website!
 
